@@ -78,5 +78,18 @@ namespace WindowsFormsApplication1
         {
             return Math.Sqrt( Math.Pow(v1.x,2)  + Math.Pow(v1.y,2) + Math.Pow(v1.z,2));
         }
+
+        public override bool Equals(object obj)
+        {
+            var B = obj as Vector;
+
+            if (B == null)
+                return false;
+
+            if ((this.fx != B.fx) | (this.fy != B.fy) | (this.fz != B.fz))
+                return false;
+            else
+                return true;
+        }
     }
 }

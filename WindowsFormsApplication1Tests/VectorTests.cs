@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1.Tests
 
             var resultVector = firstVector + secondVector;
             
-            Assert.AreEqual(resultVector,);
+            Assert.AreEqual(resultVector,{ 3, 5, 3 });
 
         }
     }
